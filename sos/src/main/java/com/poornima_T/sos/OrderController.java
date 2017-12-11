@@ -5,15 +5,18 @@ package com.poornima_T.sos;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author poornima.tharimela
  *
  */
+@RestController
+@RequestMapping("/order")
 public class OrderController {
 
-	@RequestMapping(value = "/makeOrder")
-	public Order makeOrder(@RequestParam int noOfbricks) {
+	@RequestMapping(value = "/makeOrder", method = RequestMethod.GET, headers="Accept=application/json")
+	public Order makeOrder(@RequestParam (value="noOfbricks", defaultValue="1") int noOfbricks) {
 		
 		CreateOrderService createOrderService = new CreateOrderService();
 		return createOrderService.makeOrder(noOfbricks);

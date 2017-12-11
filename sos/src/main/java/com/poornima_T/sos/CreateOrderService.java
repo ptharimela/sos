@@ -15,7 +15,7 @@ import java.util.concurrent.atomic.AtomicLong;
  * @author poornima.tharimela
  *
  */
-public class CreateOrderService Implements IService {
+public class CreateOrderService implements IService {
 
 	
 	private static AtomicLong idCounter = new AtomicLong();

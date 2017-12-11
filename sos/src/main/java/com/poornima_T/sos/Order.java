@@ -3,13 +3,19 @@
  */
 package com.poornima_T.sos;
 
+import java.io.Serializable;
+
 
 /**
  * @author poornima.tharimela
  *
  */
-public class Order {
+public class Order implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String order_ref;
 	private int noOfBricks;
 	private Boolean fulfillOrder;
