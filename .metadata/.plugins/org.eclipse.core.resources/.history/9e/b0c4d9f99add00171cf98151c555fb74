@@ -1,0 +1,37 @@
+/**
+ * 
+ */
+package com.poornima_T.sos;
+
+import java.util.UUID;
+
+
+/**
+ * @author poornima.tharimela
+ *
+ */
+public class CreateOrderService {
+
+	
+	/**
+	 * Creates an order returns an OrderReference
+	 * @return
+	 */
+	public Order makeOrder(int noOfbricks) {
+		
+		Order newOrder = new Order(noOfbricks);
+		newOrder.setOrder_ref(generateOrderRef());
+		newOrder.setFulfillOrder(Boolean.FALSE);
+		newOrder.setDispatchOrder(Boolean.FALSE);
+		return newOrder;
+		
+		
+	
+	}
+
+	private String generateOrderRef() {
+		String uniqueID = UUID.randomUUID().toString();
+		return uniqueID;
+	}
+
+}

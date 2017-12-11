@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+package com.poornima_T.sos;
+
+import java.math.BigDecimal;
+
+/**
+ * @author poornima.tharimela
+ *
+ */
+public class Order {
+
+	private String order_ref;
+	private BigDecimal noOfBricks;
+	
+	
+}

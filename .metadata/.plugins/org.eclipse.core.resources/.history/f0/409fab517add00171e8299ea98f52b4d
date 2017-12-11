@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package com.poornima_T.sos;
+
+/**
+ * @author poornima.tharimela
+ *
+ */
+public class CreateOrderService {
+
+	
+	/**
+	 * Creates an order returns an OrderReference
+	 * @return
+	 */
+	public String makeOrder(int noOfbricks) {
+		
+	
+	}
+
+}

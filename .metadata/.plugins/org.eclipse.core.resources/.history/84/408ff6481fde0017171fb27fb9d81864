@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package com.poornima_T.sos;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+
+/**
+ * @author poornima.tharimela
+ *
+ */
+public class Application {
+
+}

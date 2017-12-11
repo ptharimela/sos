@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package com.poornima_T.sos;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+/**
+ * @author poornima.tharimela
+ *
+ */
+public class CreateOrderServiceTest {
+	 
+     public CreateOrderService createService = new CreateOrderService();
+     
+     @Test
+     public void makeOrderTest(){
+    	 
+    	 createService.makeOrder()
+     }
+
+}

@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package com.poornima_T.sos;
+
+import java.math.BigDecimal;
+
+/**
+ * @author poornima.tharimela
+ *
+ */
+public class CreateOrderService {
+
+	
+	/**
+	 * Creates an order returns an OrderReference
+	 * @return
+	 */
+	public String makeOrder(int noOfbricks) {
+		
+		Order newOrder = new Order()
+		
+		return null;
+		
+		
+	
+	}
+
+}

@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package com.poornima_T.sos;
+
+/**
+ * @author poornima.tharimela
+ *
+ */
+public class CreateOrderService {
+
+	public String makeOrder() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

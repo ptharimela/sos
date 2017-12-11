@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+package com.poornima_T.sos;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import com.poornima_T.sos.Order;
+import com.poornima_T.sos.CreateOrderService;W
+
+/**
+ * @author poornima.tharimela
+ *
+ */
+public class OrderController {
+
+	@RequestMapping("/makeOrder")
+	public Order makeOrder(@RequestParam int noOfbricks) {
+		
+		CreateOrderService createOrderService = new CreateOrderService();
+		createOrderService.makeOrder(noOfbricks);
+		return null;
+		
+		
+	}
+	
+	
+}
