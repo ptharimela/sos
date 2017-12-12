@@ -19,4 +19,24 @@
 <entry path="C:\CGIAPPS\Java\JBOSS\jdk1.8.0_102\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
+<libraryInfo home="C:\CGIAPPS\Java\ADV\jdk1.8.0_102\jre" version="1.8.0_102">
+<bootpath>
+<entry path="C:\CGIAPPS\Java\ADV\jdk1.8.0_102\jre\lib\endorsed\swing.jar"/>
+<entry path="C:\CGIAPPS\Java\ADV\jdk1.8.0_102\jre\lib\resources.jar"/>
+<entry path="C:\CGIAPPS\Java\ADV\jdk1.8.0_102\jre\lib\rt.jar"/>
+<entry path="C:\CGIAPPS\Java\ADV\jdk1.8.0_102\jre\lib\sunrsasign.jar"/>
+<entry path="C:\CGIAPPS\Java\ADV\jdk1.8.0_102\jre\lib\jsse.jar"/>
+<entry path="C:\CGIAPPS\Java\ADV\jdk1.8.0_102\jre\lib\jce.jar"/>
+<entry path="C:\CGIAPPS\Java\ADV\jdk1.8.0_102\jre\lib\charsets.jar"/>
+<entry path="C:\CGIAPPS\Java\ADV\jdk1.8.0_102\jre\lib\jfr.jar"/>
+<entry path="C:\CGIAPPS\Java\ADV\jdk1.8.0_102\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\CGIAPPS\Java\ADV\jdk1.8.0_102\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\CGIAPPS\Java\ADV\jdk1.8.0_102\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
 </libraryInfos>

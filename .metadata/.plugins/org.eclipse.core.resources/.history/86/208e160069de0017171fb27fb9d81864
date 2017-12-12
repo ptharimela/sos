@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package com.poornima_T.sos;
+
+import java.sql.Connection;
+
+/**
+ * @author poornima.tharimela
+ *
+ */
+public class OrdersRepository extends DBRepository {
+
+	public void saveToDB()
+	{
+		Connection connection = getConnection();
+		
+	}
+}

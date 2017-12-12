@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class RetrieveOrderService implements IService {
 
 	public Order getOrder(String orderRef) {
-		Order order = getFromDataStore(orderRef);
+		Order order = OrdersRepository.retrieveOrder(orderRef);
 
 		return order;
 	}
@@ -21,9 +21,9 @@ public class RetrieveOrderService implements IService {
 		return null;
 	}
 
-	private Order getFromDataStore(String orderRef) {
-		// TODO Auto-generated method stub
+/*	private Order getFromDataStore(String orderRef) {
+		
 		return null;
-	}
+	}*/
 
 }

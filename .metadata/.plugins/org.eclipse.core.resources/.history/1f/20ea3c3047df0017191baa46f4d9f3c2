@@ -1,0 +1,11 @@
+package com.poornima_T.sos;
+
+import org.junit.runner.RunWith;
+
+
+@RunWith(PowerMockRunner.class)
+@PrepareForTest(OrderController.class)
+
+public class OrderControllerTest {
+
+}

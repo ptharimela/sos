@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+package com.poornima_T.sos;
+
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.runners.MockitoJUnitRunner;
+
+/**
+ * @author poornima.tharimela
+ *
+ */
+@RunWith(MockitoJUnitRunner.class)
+public class OrderControllerTest {
+
+
+    @InjectMocks
+    private OrderController controllerUT = new OrderController();
+    
+    @Mocks
+    public CreateOrderService createOrder = new CreateOrderService();
+}

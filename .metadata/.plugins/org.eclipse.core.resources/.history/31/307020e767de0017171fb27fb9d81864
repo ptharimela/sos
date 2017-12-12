@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.poornima_T.sos;
+
+import DBRepository;
+
+/**
+ * @author poornima.tharimela
+ *
+ */
+public class OrdersRepository extends DBRepository {
+
+}

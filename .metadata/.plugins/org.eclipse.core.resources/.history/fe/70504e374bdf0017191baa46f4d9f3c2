@@ -1,0 +1,27 @@
+package com.poornima_T.sos;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.powermock.api.mockito.PowerMockito;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
+
+
+@RunWith(PowerMockRunner.class)
+@PrepareForTest(RetrieveOrderService.class)
+
+public class RetrieveOrderServiceTest {
+
+	RetrieveOrderService retrieveService = null;
+	
+	@Test
+	public void getOrderTest() {
+		mockOrderRepo = PowerMockito.mock(CreateOrderService.class);
+		  PowerMockito.when(mockCreateOrder.makeOrder(4)).thenReturn(order);
+		  assertEquals(order.getNoOfBricks(), 4);
+
+	}
+	
+}

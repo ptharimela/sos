@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package com.poornima_T.sos;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import org.springframework.stereotype.Repository;
+
+/**
+ * @author poornima.tharimela
+ *
+ */
+@Repository
+abstract public class DBRepository {
+
+
+	    Connection connection = null;
+	public Connection getConnection()
+	{
+
+		   try {
+			Class.forName("org.sqlite.JDBC");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		 connection = DriverManager.getConnection("jdbc:sqlite:sample.db");
+		 return connection;
+	}
+	
+}

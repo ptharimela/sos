@@ -1,0 +1,42 @@
+/**
+ * 
+ */
+package com.poornima_T.sos;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+/**
+ * @author poornima.tharimela
+ *
+ */
+public class OrdersRepository extends DBRepository {
+
+	public void saveToDB(Order order)
+	{
+		Connection connection = getConnection();
+		Statement statement;
+		try {
+			statement = connection.createStatement();
+			statement.setQueryTimeout(30); 
+			 String sql = "INSERT INTO order(name,capacity) VALUES(?,?)";
+			 
+		        try (Connection conn = this.connect();
+		                PreparedStatement pstmt = conn.prepareStatement(sql)) {
+		            pstmt.setString(1, name);
+		            pstmt.setDouble(2, capacity);
+		            pstmt.executeUpdate();
+		        } catch (SQLException e) {
+		            System.out.println(e.getMessage());
+		        }
+	         statement.executeUpdate(sql);
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public void updateDB()
+	{}
+}

@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package com.poornima_T.sos;
+
+import org.springframework.stereotype.Repository;
+
+/**
+ * @author poornima.tharimela
+ *
+ */
+@Repository
+abstract public class DBRepository {
+
+}

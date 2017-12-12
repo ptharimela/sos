@@ -35,7 +35,8 @@ public class CreateOrderService implements IService {
 	 */
 	public void submitOrder(Order order){
         
-           OrdersRepository.saveToDB(order);
+		      OrdersRepository.saveToFile(order);
+           //OrdersRepository.saveToDB(order);
     }
 
 	private String generateOrderRef() {

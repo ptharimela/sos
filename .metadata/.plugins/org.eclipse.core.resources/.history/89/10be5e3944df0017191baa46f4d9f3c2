@@ -1,0 +1,33 @@
+package com.poornima_T.sos;
+public class OrderCOntrollerTest {
+
+    @InjectMocks
+    PeopleController controller;
+
+    @Mock
+    PeopleService mockPeopleService;
+
+    @Mock
+    View mockView;
+
+    MockMvc mockMvc;
+
+    @Before
+    public void setUp() throws Exception {
+        MockitoAnnotations.initMocks(this);
+        mockMvc = standaloneSetup(controller)
+                .setSingleView(mockView)
+                .build();
+    }
+
+    @Test
+    public void testListPeopleInGroup() throws Exception {
+        List<Person> expectedPeople = asList(new Person());
+        when(mockPeopleService.listPeople("someGroup")).thenReturn(expectedPeople);
+
+        mockMvc.perform(get("/people/someGroup"))
+                .andExpect(status().isOk())
+                .andExpect(model().attribute("people", expectedPeople))
+                .andExpect(view().name("peopleList"));
+    }
+}

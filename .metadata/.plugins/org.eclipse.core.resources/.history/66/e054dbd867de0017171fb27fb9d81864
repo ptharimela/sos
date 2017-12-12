@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+package com.poornima_T.sos;
+
+/**
+ * @author poornima.tharimela
+ *
+ */
+@Repository
+public class DBRepository {
+
+}

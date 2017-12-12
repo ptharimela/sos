@@ -1,0 +1,37 @@
+/**
+ * 
+ */
+package com.poornima_T.sos;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+/**
+ * @author poornima.tharimela
+ *
+ */
+public class OrdersRepository extends DBRepository {
+
+	public void saveToDB(Order order) {
+		Connection connection = getConnection();
+
+		String sql = "INSERT INTO order(orderRef,noOfbricks,fullfillOrder,dispatchOrder) VALUES(?,?,?,?)";
+		PreparedStatement statement;
+
+		try {
+			statement = connection.prepareStatement(sql);
+
+			statement.setInt(2, order.getNoOfBricks());
+			statement.setBoolean(3, order.getFulfillOrder());
+			statement.setBoolean(4, order.getDispatchOrder());
+			statement.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public void updateDB() {
+	}
+}

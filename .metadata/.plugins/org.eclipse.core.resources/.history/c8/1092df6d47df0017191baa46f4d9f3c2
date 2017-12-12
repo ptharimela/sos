@@ -1,0 +1,22 @@
+package com.poornima_T.sos;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.powermock.api.mockito.PowerMockito;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
+
+
+@RunWith(PowerMockRunner.class)
+@PrepareForTest(OrderController.class)
+
+public class OrderControllerTest {
+	  @Test
+	  public void testGetUserCount() {
+	    mockUserService = PowerMockito.mock(DefaultUserService.class);
+	    PowerMockito.when(mockUserService.getUserCount()).thenReturn(100L);
+	    userController = new UserController(mockUserService);
+	    assertEquals(100L, userController.getUserCount().longValue());
+	  }
+
+}
